@@ -1,0 +1,10 @@
+<h1>
+<b>  listado de Super Heroes Cañones</b>
+</h1>
+
+<ul>
+<li *ngFor="let heroe of heroes; let i = index">
+ <h3><i> {{ i + 1 }} - {{ heroe }} <button (click)="delete(i)">Borrar</button></i></h3> </li>
+</ul>
+<h3>Heroe Borrado: {{heroDeleted}} </h3>
+
