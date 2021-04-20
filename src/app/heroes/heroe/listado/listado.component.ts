@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent {
-  heroes: string[] = ['Hulk', 'Saitama', 'Superman', 'Thor', 'Goku', 'Vegeta'];
+  heroes: string[] = ['Pocholatita', 'Hulk', 'Saitama', 'Superman', 'Thor', 'Goku', 'Vegeta'];
   heroDeleted = '';
 
   delete(index: number): void {
