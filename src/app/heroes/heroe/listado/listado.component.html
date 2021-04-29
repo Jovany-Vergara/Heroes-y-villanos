@@ -3,5 +3,12 @@
     <ul>
         <li *ngFor="let heroe of heroes; let i = index">
             <i> {{ i + 1 }} - {{ heroe }} <button (click)="delete(i)">Borrar</button></i></li>
+
     </ul>
-    <b>Heroe Borrado: {{heroDeleted}} </b></h4>
+    <b>Heroe Borrado: {{heroDeleted}} </b>
+    <h3><b> Estos son los villanos perros</b></h3>
+    <ul>
+        <li *ngFor="let villanos of villanos; let i = index">
+            <i> {{ i + 1 }} - {{ villanos }} <button (click)="deletes(i)">Borrar</button></i></li>
+    </ul>
+    <b>Heroe Borrado: {{villanoDeleted}} </b></h4>
