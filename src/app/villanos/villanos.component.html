@@ -1,0 +1,35 @@
+<div class="container">
+    <router-outlet></router-outlet>
+    <h2 class="title">Mis villanos</h2>
+    <div class="row">
+        <div class="col">
+            <ul class="villanos">
+                <li *ngFor="let villan of villanos" [class.selectrd]="villan === selectedVillano" (click)="onSelect(villan)">
+                    <span class="badge"> {{villan.id}}</span>{{villan.name}} </li>
+            </ul>
+        </div>
+        <div class="col">
+            <div *ngIf="selectedVillano">
+                <h2>{{selectedVillano.name | uppercase}} Detalles: </h2>
+                <h5><b>
+                <div><span>id: </span> <span class="badge badge-primary">{{selectedVillano.id}} </span></div>
+                <div>
+                    <b><label for="villan-name"> Villano Nombre: </label></b>
+                    <input type="text" [(ngModel)]="selectedVillano.name" placeholder="poder" class="form-control">
+            </div>
+            <div>
+                <label for="villan-nivel">nivel De Poder: </label>
+                <input type="text" [(ngModel)]="selectedVillano.nivel" placeholder="poder" class="form-control" disabled>
+                <button (click)="onPlus(selectedVillano)">Mas Poder</button>
+            </div>
+
+            <div>
+                <label for="villan-poder"> Villano Poder</label>
+                <input type="text" [(ngModel)]="selectedVillano.poder" placeholder="poder" class="form-control">
+            </div>
+            </b>
+            </h5>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,61 @@
+.villanos {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+}
+
+.villanos li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(233, 233, 221);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.villanos li:hover {
+    color: #2c3a41;
+    background-color: #0aceff;
+    left: .1em;
+}
+
+.villanos li.selected {
+    background-color: rgba(16, 216, 230, 0.87);
+    color: rgb(248, 16, 16);
+}
+
+.villanos li.selected:hover {
+    background-color: #ec390c;
+    color: rgb(245, 0, 0);
+}
+
+.villanos li.selected:active {
+    background-color: rgb(253, 0, 0);
+    color: rgb(190, 35, 35);
+}
+
+.villanos .badge {
+    display: inline-block;
+    font-size: small;
+    color: rgb(255, 255, 255);
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #000000;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+input {
+    padding: .5rem;
+}
+
+.title {
+    font-weight: bold;
+}
